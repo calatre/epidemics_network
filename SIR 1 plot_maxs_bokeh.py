@@ -32,7 +32,7 @@ df = pd.DataFrame(maxs.stack(), columns=['Infected']).reset_index()
 
 print(df) #lets se how it looks like
 
-df.round(1) #making sure there's no wierd huge numbers
+df.round(1) #making sure there's no weird huge numbers
 
 #preparing the colors to be used
 colors = palet.magma(128)
@@ -66,6 +66,7 @@ p.circle(x="level_0", y="level_1", size=10,
        source=source,
        fill_color={'field': 'Infected', 'transform': mapper},
        line_color=None)
+
 #puting a colorbar next to it, to interpret our colors
 color_bar = ColorBar(color_mapper=mapper, major_label_text_font_size="7pt",
                      ticker=BasicTicker(desired_num_ticks=10),
@@ -79,5 +80,5 @@ p.select_one(HoverTool).tooltips = [
 ]
 
 #Show the plot, save it, or both
-#show(p) 
+show(p) 
 save(p, filename = 'SIR_bokeh_interactive_plot.html', title = 'SIR Epidemic Plot')     
