@@ -1,2 +1,2 @@
 # epidemics_network
-'Propagation of Epidemics in Complex Networks' project at the University of Aveiro
+'Propagation of Epidemics in Complex Networks' was my 'Bachelor Project' at the University of Aveiro. It consisted of implementing probabilistic/stochastic numerical simulations of traditional compartmental epidemic models (specially Kermack and McKendrick's SIR one) in 2D lattices, and analysing the differences between them and the impact of variables such as contagion rate, removal rate or lattice geometry. Final grade was 15/20. 
